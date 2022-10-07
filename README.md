@@ -31,7 +31,7 @@
  -Node.js must be installed
  
 ## API Documentation
-https://documenter.postman.com/preview/23406185-0b99c2bd-4c99-4726-8eb2-0b1206501c82?environment=&versionTag=latest&apiName=CURRENT&version=latest&documentationLayout=classic-double-column&right-sidebar=303030&top-bar=FFFFFF&highlight=EF5B25
+ shorturl.at/abpz4
  
 ## Test Case
 google
