@@ -5,18 +5,11 @@
 -Newman
 
 ## senario
- #As Admin
-  -Login in to the system
+  -Login in to the system as Admin
   -Create Agent
   -Create Customer
   -Deposit to Agent
- 
- #As Agent
-  -Login in to the system
   -Deposit to Customer
-  
- #As Customer
-  -Login in to the system
   -Withdraw money
   -Send money
   -Check balance
