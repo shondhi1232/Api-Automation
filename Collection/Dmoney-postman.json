@@ -271,7 +271,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"adfsdbhdgugg\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Agent\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"adfhjsdbhdgugg\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Agent\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -421,7 +421,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"0200324514087589372093209348575675\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Agent\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"020324514087589372093209348575675\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Agent\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -954,7 +954,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"09911465761113\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"01739840202\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"09911465761112\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"01739840202\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1468,7 +1468,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"0w1u5bhdfg21hd\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"01w1u5bhdfg2\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1541,7 +1541,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"015011238478734894779438345\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"015012384787348947794383451\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2452,14 +2452,14 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/transaction/balance/01005986754",
+							"raw": "{{baseUrl}}/transaction/balance/0139999994",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"transaction",
 								"balance",
-								"01005986754"
+								"0139999994"
 							]
 						}
 					},
