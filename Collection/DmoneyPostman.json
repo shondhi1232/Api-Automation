@@ -346,7 +346,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "   {\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"kldsfhjjknfcue\",\r\n    \"role\":\"Agent\"\r\n}",
+							"raw": "   {\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"kldsfhjjknfcueaaa\",\r\n    \"role\":\"Agent\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -421,7 +421,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"023897589372093209348575675\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Agent\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"022123897589372093209348575675\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Agent\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -954,7 +954,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"00097634743\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"00917634743\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1468,7 +1468,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"0238975893720932090437r398jferhf\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"02389758937yh20932090437r398jferhf\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1541,7 +1541,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"0150872384787348947389438345\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"015000872384787348947389438345\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2710,7 +2710,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"from_account\":\"{{customer_phone_number}}\",\r\n    \"to_account\":\"{{customer_phone_number}}\",\r\n    \"amount\":10\r\n}",
+							"raw": "{\r\n    \"from_account\":\"{{customer_phone_number}}\",\r\n    \"to_account\":\"01503411985\",\r\n    \"amount\":10\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
