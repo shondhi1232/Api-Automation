@@ -24,7 +24,7 @@
  -Node.js must be installed
  
 ## API Documentation
- shorturl.at/fjoPW
+ shorturl.at/BCFSY
  
 ## Test Case
 https://docs.google.com/spreadsheets/d/1_Z0k5VVr3m7sjTqzeAWYQK8IYDI10ZqqqutrCnbwvY0/edit#gid=1301448590
