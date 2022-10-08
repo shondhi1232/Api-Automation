@@ -217,6 +217,81 @@
 					"response": []
 				},
 				{
+					"name": "Create agent with string character in number field",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Status code is 208\", function () {\r",
+									"    pm.response.to.have.status(208);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"User can not create account by string type phone number\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.message).to.contains(\"User number is invalid\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var randomId=_.random(10000,99999)\r",
+									"var phoneNumber=\"0170\"+_.random(1000000,9999999)\r",
+									"pm.collectionVariables.set(\"randomId\",randomId)\r",
+									"pm.collectionVariables.set(\"phoneNumber\",phoneNumber)\r",
+									"\r",
+									"pm.environment.set(\"randomId\",randomId)\r",
+									"pm.environment.set(\"phoneNumber\",phoneNumber)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AUTH-SECRET-KEY",
+								"value": "{{secretKey}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"asdbhdgugg\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Agent\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create agent without input the email data",
 					"event": [
 						{
@@ -292,81 +367,6 @@
 					"response": []
 				},
 				{
-					"name": "Create agent by String character in phone number field",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Status code is 208\", function () {\r",
-									"    pm.response.to.have.status(208);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"User can not create account by string type phone number\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.message).to.contains(\"User number is invalid\");\r",
-									"});\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"exec": [
-									"var randomId=_.random(10000,99999)\r",
-									"var phoneNumber=\"0170\"+_.random(1000000,9999999)\r",
-									"pm.collectionVariables.set(\"randomId\",randomId)\r",
-									"pm.collectionVariables.set(\"phoneNumber\",phoneNumber)\r",
-									"\r",
-									"pm.environment.set(\"randomId\",randomId)\r",
-									"pm.environment.set(\"phoneNumber\",phoneNumber)"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{token}}",
-								"type": "text"
-							},
-							{
-								"key": "X-AUTH-SECRET-KEY",
-								"value": "{{secretKey}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "   {\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"kldsfhjjknfcueaaa\",\r\n    \"role\":\"Agent\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/user/create",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"user",
-								"create"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Create agent with Too long digits in number field",
 					"event": [
 						{
@@ -421,7 +421,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"022123897589372093209348575675\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Agent\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Agent 1\",\r\n    \"email\":\"agent{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"02000324514087589372093209348575675\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Agent\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -954,7 +954,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"00917634743\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"09914657611133\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"01739840202\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1468,7 +1468,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"02389758937yh20932090437r398jferhf\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"01u5bhdfg21hd\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1541,7 +1541,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"015000872384787348947389438345\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Test Customer 1\",\r\n    \"email\":\"user{{randomId}}@test.com\",\r\n    \"password\":\"1234\",\r\n    \"phone_number\":\"0150112384787348947389438345\",\r\n    \"nid\":\"123456789\",\r\n    \"role\":\"Customer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2131,7 +2131,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"from_account\":\"{{agent_phone_number}}\",\r\n    \"to_account\":\"{{customer_phone_number}}\",\r\n    \"amount\":10000\r\n}",
+							"raw": "{\r\n    \"from_account\":\"{{agent_phone_number}}\",\r\n    \"to_account\":\"{{customer_phone_number}}\",\r\n    \"amount\":100000\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2248,7 +2248,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"from_account\":\"{{agent_phone_number}}\",\r\n    \"to_account\":\"01391876346\",\r\n    \"amount\":200\r\n}",
+							"raw": "{\r\n    \"from_account\":\"{{agent_phone_number}}\",\r\n    \"to_account\":\"01991876346\",\r\n    \"amount\":200\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2452,14 +2452,14 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/transaction/balance/000087654359867544",
+							"raw": "{{baseUrl}}/transaction/balance/01005986754",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"transaction",
 								"balance",
-								"000087654359867544"
+								"01005986754"
 							]
 						}
 					},

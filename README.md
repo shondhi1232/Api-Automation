@@ -24,7 +24,7 @@
  -Node.js must be installed
  
 ## API Documentation
- shorturl.at/fmxzN
+ shorturl.at/fjoPW
  
 ## Test Case
 google
