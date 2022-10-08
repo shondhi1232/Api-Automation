@@ -31,7 +31,8 @@ google
 
 ## Output
 
-![Capture](https://user-images.githubusercontent.com/52061402/194704069-b295aa97-c2e8-43ca-90f8-d223934e658d.JPG)
+![Capture](https://user-images.githubusercontent.com/52061402/194730531-91b4ba1c-e990-4032-8b92-053a30192299.JPG)
+
 
 
 
