@@ -1,26 +1,39 @@
 # Api-Automation
 
 ## Technology and tools used
+
 -Postman
+
 -Newman
 
 ## senario
   -Login in to the system as Admin
+  
   -Create Agent
+  
   -Create Customer
+  
   -Deposit to Agent
+  
   -Deposit to Customer
+  
   -Withdraw money
+  
   -Send money
+  
   -Check balance
   
 ## How to run this project
+
   -clone this project
+  
   -hit the following command
+  
   ``` npm i```
   ``` npm test ```
   
 ## Pre requisite
+
  -Node.js must be installed
  
 ## API Documentation
